@@ -27,7 +27,6 @@
       "Atomics": "readonly",
       "SharedArrayBuffer": "readonly"
     },
-    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
         "jsx": true
@@ -35,7 +34,7 @@
       "ecmaVersion": 8,
       "sourceType": "module"
     },
-    "plugins": ["react", "jest"],
+    "plugins": ["react"],
     "rules": {
       "import-extensions": "off",
       "key-spacing": [
