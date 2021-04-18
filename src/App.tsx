@@ -32,7 +32,7 @@ const App = () => {
         </Grid>
         <Grid item xs={8} md={8} lg={8}>
           {projects.map((value) => (
-            <Accordion>
+            <Accordion style={{margin: '16px 0px 16px 0px'}}>
               <AccordionSummary>
                 <Typography>{value.name}</Typography>
               </AccordionSummary>
