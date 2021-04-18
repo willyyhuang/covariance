@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/soen-357/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/soen-357/static/js/main.ff85dc78.chunk.js",
+    "main.js.map": "/soen-357/static/js/main.ff85dc78.chunk.js.map",
+    "runtime-main.js": "/soen-357/static/js/runtime-main.d91728dd.js",
+    "runtime-main.js.map": "/soen-357/static/js/runtime-main.d91728dd.js.map",
+    "static/css/2.1df16c06.chunk.css": "/soen-357/static/css/2.1df16c06.chunk.css",
+    "static/js/2.0b5011a4.chunk.js": "/soen-357/static/js/2.0b5011a4.chunk.js",
+    "static/js/2.0b5011a4.chunk.js.map": "/soen-357/static/js/2.0b5011a4.chunk.js.map",
+    "index.html": "/soen-357/index.html",
+    "static/css/2.1df16c06.chunk.css.map": "/soen-357/static/css/2.1df16c06.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/soen-357/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.0b5011a4.chunk.js.LICENSE.txt": "/soen-357/static/js/2.0b5011a4.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/soen-357/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d91728dd.js",
+    "static/css/2.1df16c06.chunk.css",
+    "static/js/2.0b5011a4.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.ff85dc78.chunk.js"
+  ]
+}
