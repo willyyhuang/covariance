@@ -45,7 +45,7 @@ const OverView = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>{value.detail}</Typography>
-                <Button variant='outlined' href={`/${value.id}`}>
+                <Button variant='outlined' href={`/soen-357/${value.id}`}>
                   Open
                 </Button>
               </AccordionDetails>
