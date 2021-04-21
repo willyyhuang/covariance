@@ -74,7 +74,7 @@ const ProjectDetail = () => {
 
   return (
     <Card style={{margin: '20vh 20vw 20vh 20vw'}}>
-      <Card>
+      <Card style={{padding: 16}}>
         <CardActions>
           <Add />
           <Delete />
