@@ -13,22 +13,10 @@ import {
 } from '@material-ui/core'
 import {Add, ExitToApp, Settings} from '@material-ui/icons'
 import ReactLogo from '../../images/react-logo.svg'
+import projectList from '../../mock/projectList.json'
 
 const OverView = () => {
-  const projects = [
-    {
-      id: 1,
-      name: 'secret hardware 1',
-      detail:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-    },
-    {
-      id: 2,
-      name: 'secret hardware 2',
-      detail:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-    },
-  ]
+  const {projects} = projectList
 
   return (
     <Card style={{margin: '20vh 20vw 20vh 20vw'}}>

@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "secret hardware 1",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+    },
+    {
+      "id": 2,
+      "name": "secret hardware 2",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+    }
+  ]
+}
