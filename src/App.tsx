@@ -1,11 +1,13 @@
-import {BrowserRouter, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import React from 'react'
 import {Overview, ProjectDetail} from './views'
 
 const App = () => (
-  <BrowserRouter basename='soen-357'>
-    <Route path='/:id' component={ProjectDetail} />
-    <Route path='/' component={Overview} />
-  </BrowserRouter>
+  <Router basename={process.env.PUBLIC_URL}>
+    <Switch>
+      <Route path='/:id' component={ProjectDetail} />
+      <Route path='/' component={Overview} />
+    </Switch>
+  </Router>
 )
 export default App
