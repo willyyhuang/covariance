@@ -3,9 +3,9 @@ import React from 'react'
 import {Overview, ProjectDetail} from './views'
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename='soen-357'>
     <Route path='/:id' component={ProjectDetail} />
-    <Route exact path='/' component={Overview} />
+    <Route path='/' component={Overview} />
   </BrowserRouter>
 )
 export default App
