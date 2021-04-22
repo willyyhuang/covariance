@@ -11,19 +11,33 @@ import {
   Grid,
   Typography,
 } from '@material-ui/core'
+import {makeStyles} from '@material-ui/core/styles'
 import {Add, ExitToApp, Settings} from '@material-ui/icons'
-import ReactLogo from '../../images/react-logo.svg'
+import UserAvatar from '../../images/avatar.png'
 import projectList from '../../mock/projectList.json'
 
 const OverView = () => {
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      display: 'flex',
+      '& > *': {
+        margin: theme.spacing(1),
+      },
+    },
+    large: {
+      width: theme.spacing(14),
+      height: theme.spacing(14),
+    },
+  }))
   const {projects} = projectList
+  const classes = useStyles()
 
   return (
     <Card style={{margin: '20vh 20vw 20vh 20vw'}}>
       <Grid container style={{margin: '16px 0px 16px 0px'}}>
         <Grid item xs={1} md={1} lg={1} />
         <Grid item xs={2} md={2} lg={2}>
-          <Avatar src={ReactLogo} />
+          <Avatar className={classes.large} src={UserAvatar} />
         </Grid>
         <Grid item xs={8} md={8} lg={8}>
           <Card>
