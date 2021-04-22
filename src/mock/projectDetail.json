@@ -1,12 +1,32 @@
 {
-  "name": "secret hardware 1",
-  "description": "Donec pulvinar ultrices eros a iaculis. Vestibulum velit ipsum, ornare et ante et, gravida interdum mauris. Quisque facilisis erat eget orci vehicula pulvinar. Curabitur iaculis lacus ac est posuere gravida. Cras tempor ex vel orci viverra, vel fringilla nibh facilisis. Curabitur venenatis risus in elementum ultrices. Nunc vel nisl convallis, fringilla quam quis, varius nisl. In at porttitor enim, a dictum nibh. Integer at blandit diam. Mauris eget sem blandit magna rhoncus molestie. Pellentesque laoreet auctor hendrerit. Maecenas sed gravida justo. Maecenas ut molestie elit. Curabitur viverra nec tortor quis tincidunt. Vestibulum sed orci vel augue lacinia interdum eget sed metus. Suspendisse bibendum blandit elementum.",
-  "version": "1.0.0",
+  "name": "FreePrint",
+  "description": "FreePrint takes the form of a free desktop 3D printer capable of printing plastic objects. Since many parts of FreePrint are made from plastic and FreePrint prints those parts, FreePrint self-replicates by making a kit of itself - a kit that anyone can assemble given time and materials. It also means that - if you've got a FreePrint - you can print lots of useful stuff, and you can print another FreePrint for a friend!",
+  "version": ["1.0.0", "0.9.2", "0.8.4", "0.3.1"],
   "files": [
     {
       "type": "PDF",
-      "name": "ultrices eros a iaculis",
-      "description": "gravida interdum mauris. Quisque"
+      "name": "Assembly Instructions",
+      "description": "Collection of instructions for assembling the machine"
+    },
+    {
+      "type": "Gerber",
+      "name": "Main Board",
+      "description": "Main controller board for driving the stepper motors"
+    },
+    {
+      "type": "Code",
+      "name": "Stepper motor Drivers",
+      "description": "Control Drivers to allow the main board to communicate with the smart stepper motors"
+    },
+    {
+      "type": "Code",
+      "name": "Main Board Firmware",
+      "description": "Primary control software for flashing the main board"
+    },
+    {
+      "type": "CAD",
+      "name": "Printer Frame",
+      "description": "3D Render of the printer body and build platform"
     }
   ]
 }

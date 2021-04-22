@@ -2,13 +2,28 @@
   "projects": [
     {
       "id": 1,
-      "name": "secret hardware 1",
-      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+      "name": "FreePrint: Opensource 3D Printer",
+      "detail": "FreePrint is a collection of CAD files, Circuit board designs, and software to build your very own 3D Printer at home."
     },
     {
       "id": 2,
-      "name": "secret hardware 2",
-      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+      "name": "SoundPhonic",
+      "detail": "The next generation of open source streaming speakers. Build your own wireless boom-box system, and tailor it to your needs"
+    },
+    {
+      "id": 3,
+      "name": "Picro",
+      "detail": "A DIY instant camera that prints directly to inexpensive, easily source-able photo paper."
+    },
+    {
+      "id": 4,
+      "name": "Toolzia",
+      "detail": "A set of Plasma cutter designs for making your own specialty tools yourself; includes boutique wrenches for working on BMWs, Audis and more"
+    },
+    {
+      "id": 5,
+      "name": "BackupBot",
+      "detail": "Enterprise style, network backups for the home. a set of files for build a rack of drive caddes as well as a FreeNAS configuration for creating a network backup server"
     }
   ]
 }
