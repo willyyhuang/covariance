@@ -32,6 +32,9 @@ import {
   Restore,
 } from '@material-ui/icons'
 import styled from 'styled-components'
+import DeveloperBoardIcon from '@material-ui/icons/DeveloperBoard'
+import CodeIcon from '@material-ui/icons/Code'
+import LayersIcon from '@material-ui/icons/Layers'
 import projectDetail from '../../mock/projectDetail.json'
 
 const StyledCardActionArea = styled(CardActionArea)`
@@ -66,6 +69,15 @@ const ProjectDetail = () => {
       case 'PDF':
         icon = <PictureAsPdf />
         break
+      case 'Gerber':
+        icon = <DeveloperBoardIcon />
+        break
+      case 'Code':
+        icon = <CodeIcon />
+        break
+      case 'CAD':
+        icon = <LayersIcon />
+        break
       default:
         icon = <Folder />
     }
@@ -75,6 +87,7 @@ const ProjectDetail = () => {
   return (
     <Card style={{margin: '20vh 20vw 20vh 20vw'}}>
       <Card style={{padding: 16}}>
+        <CardHeader title={projectDetail.name} />
         <CardActions>
           <Add />
           <Delete />
@@ -95,7 +108,9 @@ const ProjectDetail = () => {
             select
             label='Select'
             variant='outlined'>
-            <MenuItem value='1.0.0'>1.0.0</MenuItem>
+            {projectDetail.version.map((version) => (
+              <MenuItem value={version}>{version}</MenuItem>
+            ))}
           </TextField>
         </Grid>
         <Grid item xs={2} md={2} lg={2} />
