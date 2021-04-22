@@ -33,6 +33,7 @@ import {
   DeveloperBoard,
   Code,
   Layers,
+  Home,
 } from '@material-ui/icons'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
@@ -63,6 +64,17 @@ const ProjectDetail = () => {
     </Typography>
   )
 
+  const getProjectTitle = (name: any) => (
+    <Typography>
+      {name}
+      <Link to='/'>
+        <IconButton>
+          <Home />
+        </IconButton>
+      </Link>
+    </Typography>
+  )
+
   const getTypeIcon = (type: string) => {
     let icon
     switch (type) {
@@ -87,7 +99,7 @@ const ProjectDetail = () => {
   return (
     <Card style={{margin: '20vh 20vw 20vh 20vw'}}>
       <Card style={{padding: 16}}>
-        <CardHeader title={projectDetail.name} />
+        <CardHeader title={getProjectTitle(projectDetail.name)} />
         <CardActions>
           <Add />
           <Delete />
