@@ -39,7 +39,6 @@ import {Link} from 'react-router-dom'
 import projectDetail from '../../mock/projectDetail.json'
 
 const StyledCardActionArea = styled(CardActionArea)`
-  color: #3366bb;
   text-align: right;
   padding: 8px;
 `
@@ -100,8 +99,8 @@ const ProjectDetail = () => {
             to='/Documentation'
             style={{textDecoration: 'none', color: '#3366bb'}}>
             Documentation
+            <StyledRightIcon />
           </Link>
-          <StyledRightIcon />
         </StyledCardActionArea>
       </Card>
       <Grid container style={{margin: '16px 0px 16px 0px'}}>
