@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/soen-357/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/soen-357/static/js/main.d2a47811.chunk.js",
-    "main.js.map": "/soen-357/static/js/main.d2a47811.chunk.js.map",
+    "main.js": "/soen-357/static/js/main.ce6c85ed.chunk.js",
+    "main.js.map": "/soen-357/static/js/main.ce6c85ed.chunk.js.map",
     "runtime-main.js": "/soen-357/static/js/runtime-main.fd8350a8.js",
     "runtime-main.js.map": "/soen-357/static/js/runtime-main.fd8350a8.js.map",
     "static/css/2.1df16c06.chunk.css": "/soen-357/static/css/2.1df16c06.chunk.css",
-    "static/js/2.14f1fab7.chunk.js": "/soen-357/static/js/2.14f1fab7.chunk.js",
-    "static/js/2.14f1fab7.chunk.js.map": "/soen-357/static/js/2.14f1fab7.chunk.js.map",
+    "static/js/2.2be43287.chunk.js": "/soen-357/static/js/2.2be43287.chunk.js",
+    "static/js/2.2be43287.chunk.js.map": "/soen-357/static/js/2.2be43287.chunk.js.map",
     "index.html": "/soen-357/index.html",
     "static/css/2.1df16c06.chunk.css.map": "/soen-357/static/css/2.1df16c06.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/soen-357/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.14f1fab7.chunk.js.LICENSE.txt": "/soen-357/static/js/2.14f1fab7.chunk.js.LICENSE.txt",
+    "static/js/2.2be43287.chunk.js.LICENSE.txt": "/soen-357/static/js/2.2be43287.chunk.js.LICENSE.txt",
     "static/media/avatar.72ef8f65.png": "/soen-357/static/media/avatar.72ef8f65.png",
     "static/media/index.css": "/soen-357/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.fd8350a8.js",
     "static/css/2.1df16c06.chunk.css",
-    "static/js/2.14f1fab7.chunk.js",
+    "static/js/2.2be43287.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.d2a47811.chunk.js"
+    "static/js/main.ce6c85ed.chunk.js"
   ]
 }
