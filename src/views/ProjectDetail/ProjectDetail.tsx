@@ -30,11 +30,12 @@ import {
   PictureAsPdf,
   Publish,
   Restore,
+  DeveloperBoard,
+  Code,
+  Layers,
 } from '@material-ui/icons'
 import styled from 'styled-components'
-import DeveloperBoardIcon from '@material-ui/icons/DeveloperBoard'
-import CodeIcon from '@material-ui/icons/Code'
-import LayersIcon from '@material-ui/icons/Layers'
+import {Link} from 'react-router-dom'
 import projectDetail from '../../mock/projectDetail.json'
 
 const StyledCardActionArea = styled(CardActionArea)`
@@ -44,7 +45,7 @@ const StyledCardActionArea = styled(CardActionArea)`
 `
 
 const StyledRightIcon = styled(ChevronRight)`
-  vertical-align: -8px;
+  vertical-align: -10px;
 `
 
 const StyledListIcon = styled(ListIcon)`
@@ -70,13 +71,13 @@ const ProjectDetail = () => {
         icon = <PictureAsPdf />
         break
       case 'Gerber':
-        icon = <DeveloperBoardIcon />
+        icon = <DeveloperBoard />
         break
       case 'Code':
-        icon = <CodeIcon />
+        icon = <Code />
         break
       case 'CAD':
-        icon = <LayersIcon />
+        icon = <Layers />
         break
       default:
         icon = <Folder />
@@ -95,7 +96,11 @@ const ProjectDetail = () => {
         </CardActions>
         <CardContent>{projectDetail.description}</CardContent>
         <StyledCardActionArea>
-          Documentation
+          <Link
+            to='/Documentation'
+            style={{textDecoration: 'none', color: '#3366bb'}}>
+            Documentation
+          </Link>
           <StyledRightIcon />
         </StyledCardActionArea>
       </Card>
