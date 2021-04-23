@@ -55,15 +55,16 @@ const StyledListIcon = styled(ListIcon)`
 const StyledButton = styled(Button)`
   height: 55px;
 `
+// Build the project description using a Typography component for fancier display
+  const ProjectDetail = () => {
+    const projectFilesTitle = (
+      <Typography>
+        <StyledListIcon />
+        Project files
+      </Typography>
+    )
 
-const ProjectDetail = () => {
-  const projectFilesTitle = (
-    <Typography>
-      <StyledListIcon />
-      Project files
-    </Typography>
-  )
-
+  // Build the project title using a Typography component for fancier display
   const getProjectTitle = (name: any) => (
     <Typography>
       {name}
@@ -75,6 +76,7 @@ const ProjectDetail = () => {
     </Typography>
   )
 
+  // Switch statement for translating type to an actual component
   const getTypeIcon = (type: string) => {
     let icon
     switch (type) {
@@ -124,6 +126,7 @@ const ProjectDetail = () => {
             select
             label='Select'
             variant='outlined'>
+            {/* Iterate over all the versions in the array and print them as options 1 by 1 */}
             {projectDetail.version.map((version) => (
               <MenuItem value={version}>{version}</MenuItem>
             ))}
@@ -146,6 +149,7 @@ const ProjectDetail = () => {
         <CardHeader title={projectFilesTitle} />
         <CardContent>
           <List>
+            {/* Iterate over all files listed as being part of this project and render them with appropriate icons */}
             {projectDetail.files.map((item) => (
               <ListItem>
                 <ListItemAvatar>

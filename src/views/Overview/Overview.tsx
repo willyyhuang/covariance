@@ -34,6 +34,7 @@ const OverView = () => {
 
   return (
     <Card style={{margin: '20vh 20vw 20vh 20vw'}}>
+      {/* Create Main Profile Card */}
       <Grid container style={{margin: '16px 0px 16px 0px'}}>
         <Grid item xs={1} md={1} lg={1} />
         <Grid item xs={2} md={2} lg={2}>
@@ -47,11 +48,12 @@ const OverView = () => {
               <ExitToApp />
             </CardActions>
             <CardContent>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              I am a young and aspiring engineering student with an insatiable need to create, tinker, learn,
+              and explore what is really possible with the power of software (and it&apos;s marriage to hardware).
+              I try and bring a high level of positivity and morale to teammates; helping people and fixing problems are where I excel.
             </CardContent>
           </Card>
+          {/* Iterate over list of projects, create expanding accordion with tile and project description */}
           {projects.map((value) => (
             <Accordion style={{margin: '16px 0px 16px 0px'}}>
               <AccordionSummary>
