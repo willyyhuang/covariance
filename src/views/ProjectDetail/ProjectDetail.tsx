@@ -36,7 +36,6 @@ import {
   Home,
 } from '@material-ui/icons'
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
 import projectDetail from '../../mock/projectDetail.json'
 
 const StyledCardActionArea = styled(CardActionArea)`
@@ -56,23 +55,21 @@ const StyledButton = styled(Button)`
   height: 55px;
 `
 // Build the project description using a Typography component for fancier display
-  const ProjectDetail = () => {
-    const projectFilesTitle = (
-      <Typography>
-        <StyledListIcon />
-        Project files
-      </Typography>
-    )
+const ProjectDetail = () => {
+  const projectFilesTitle = (
+    <Typography>
+      <StyledListIcon />
+      Project files
+    </Typography>
+  )
 
   // Build the project title using a Typography component for fancier display
   const getProjectTitle = (name: any) => (
     <Typography>
       {name}
-      <Link to='/'>
-        <IconButton>
-          <Home />
-        </IconButton>
-      </Link>
+      <IconButton href='#/'>
+        <Home />
+      </IconButton>
     </Typography>
   )
 
@@ -109,12 +106,12 @@ const StyledButton = styled(Button)`
         </CardActions>
         <CardContent>{projectDetail.description}</CardContent>
         <StyledCardActionArea>
-          <Link
-            to='/Documentation'
+          <Button
+            href='#/Documentation'
             style={{textDecoration: 'none', color: '#3366bb'}}>
             Documentation
             <StyledRightIcon />
-          </Link>
+          </Button>
         </StyledCardActionArea>
       </Card>
       <Grid container style={{margin: '16px 0px 16px 0px'}}>

@@ -85,6 +85,7 @@
     ],
     "prefer-destructuring": ["error", {"object": true, "array": false}],
     "radix": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "no-useless-escape": "off"
   }
 }
