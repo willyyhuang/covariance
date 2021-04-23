@@ -13,6 +13,7 @@ import processString from 'react-process-string'
 import projectDocuments from '../../mock/projectDocumentation.json'
 
 const ProjectDocumentation = () => {
+  // use processString to transform links in paragraph to hyperlink while maintaining the rest as normal text
   const config = [
     {
       regex: /(http|https):\/\/(\S+)\.([a-z]{2,}?)(.*?)( |\,|$|\.)/gim,
