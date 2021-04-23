@@ -1,3 +1,1 @@
-SOEN 357 Project
-
-The application is currently hosted on https://willyyhuang.github.io/soen-357/
+Covariance is a collaborative inventing platform that offers a mechanism for working on innovations together. Rarely is one person armed with all the skills to complete a project all on their own. To alleviate this issue, our platform aims to collect and integrate tools that innovators already know and love, as well as help bring like minded people together. Covariance will allow inventors to create repositories for their public or private projects, to collect all their documentation, as well as keep track of changes to projects. Additionally the platform will feature a community driven marketplace where innovators can find collaborators, working for profit or for the sake of creation. 
