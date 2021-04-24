@@ -9,10 +9,13 @@ import {
   CardActions,
   CardContent,
   Grid,
+  TextField,
   Typography,
 } from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles'
 import {Add, ExitToApp, Settings} from '@material-ui/icons'
+import lodash from 'lodash'
+import Autocomplete from '@material-ui/lab/Autocomplete'
 import UserAvatar from '../../images/avatar.png'
 import projectList from '../../mock/projectList.json'
 
@@ -31,6 +34,13 @@ const OverView = () => {
   }))
   const {projects} = projectList
   const classes = useStyles()
+  const options = [
+    {title: 'Hyperledger'},
+    {title: 'E-vent'},
+    {title: 'FarmBot'},
+    {title: 'Upspin'},
+    {title: 'AdaNet'},
+  ]
 
   return (
     <Card style={{margin: '20vh 20vw 20vh 20vw'}}>
@@ -41,6 +51,25 @@ const OverView = () => {
           <Avatar className={classes.large} src={UserAvatar} />
         </Grid>
         <Grid item xs={8} md={8} lg={8}>
+          <Autocomplete
+            id='project-discovery'
+            options={options}
+            getOptionLabel={(option: any) => {
+              const val = option.title
+              return lodash.isString(val) ? val : ''
+            }}
+            style={{width: '100%'}}
+            renderInput={(params: any) => (
+              <TextField
+                {...params}
+                id='outlined-basic'
+                label='Project discovery'
+                variant='outlined'
+                size='small'
+                style={{marginBottom: 16, width: '100%'}}
+              />
+            )}
+          />
           <Card>
             <CardActions>
               <Add />
@@ -48,9 +77,11 @@ const OverView = () => {
               <ExitToApp />
             </CardActions>
             <CardContent>
-              I am a young and aspiring engineering student with an insatiable need to create, tinker, learn,
-              and explore what is really possible with the power of software (and it&apos;s marriage to hardware).
-              I try and bring a high level of positivity and morale to teammates; helping people and fixing problems are where I excel.
+              I am a young and aspiring engineering student with an insatiable
+              need to create, tinker, learn, and explore what is really possible
+              with the power of software (and it&apos;s marriage to hardware). I
+              try and bring a high level of positivity and morale to teammates;
+              helping people and fixing problems are where I excel.
             </CardContent>
           </Card>
           {/* Iterate over list of projects, create expanding accordion with tile and project description */}
